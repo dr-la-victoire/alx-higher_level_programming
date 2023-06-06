@@ -1,9 +1,12 @@
 #!/usr/bin/python3
 def remove_char_at(str, n):
-    '''This function removes the char of a string at position n'''
-    # creating a copy of the str
+    # creating a copy of the string
     new_str = str[:]
-    for position in new_str:
-        if position == n:
-            new_str.replace(position, "")
-    print("{}".format(new_str))
+    # turning the string into a list
+    list_string = list(new_str)
+    # deleting the element at position n
+    if n >= 0:
+        del list_string[n]
+    # turning the list back to a string
+    the_str = ''.join(list_string)
+    print("{}".format(the_str))

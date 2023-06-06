@@ -1,7 +1,7 @@
 #!/usr/bin/python3
-# running the loop
-for char in range(97, 123):
-    # checking for 'e' or 'q'
-    if char == 101 or char == 113:
+# running a loop
+for i in range(97, 123):
+    # checking for e or q
+    if i == 101 or i == 113:
         continue
-    print("{}".format(chr(char)), end="")
+    print('{}'.format(chr(i)), end="")

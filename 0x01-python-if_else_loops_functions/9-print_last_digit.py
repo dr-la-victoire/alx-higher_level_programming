@@ -3,3 +3,4 @@ def print_last_digit(number):
     '''This function prints the last digit of a number'''
     last = abs(number) % 10
     print("{}".format(last), end="")
+    return last

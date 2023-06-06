@@ -7,4 +7,3 @@ def remove_char_at(str, n):
         if position == n:
             new_str.replace(position, "")
     print("{}".format(new_str))
-

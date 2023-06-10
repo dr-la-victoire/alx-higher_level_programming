@@ -5,7 +5,7 @@ def replace_in_list(my_list, idx, element):
     if idx < 0:
         return (my_list)
     # Checking whether or not the list is out of range
-    length = len(my_list)
+    length = len(my_list) - 1
     if idx > length:
         return (my_list)
     # Replacing element in list

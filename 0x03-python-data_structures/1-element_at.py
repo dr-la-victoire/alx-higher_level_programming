@@ -5,7 +5,7 @@ def element_at(my_list, idx):
     if idx < 0:
         return (None)
     # Assigning the range of the list
-    length = len(my_list)
+    length = len(my_list) - 1
     # Checking whether or not idx is out of range
     if idx > length:
         return (None)

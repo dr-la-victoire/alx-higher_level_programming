@@ -5,3 +5,4 @@ The following projects are stored in this repository:
 3) 0x02. Python - import & modules: I think I'm making my own modules and learning about import
 4) 0x03. Python - Data Structures: Lists, Tuples: We begin the data structure lessons in Python. Yay
 5) 0x05. Python - Exceptions: Here, we learned to handle exceptions. The whole try/except syntax
+6) 0x06. Python - Classes and Objects: All the work on Object Oriented Programming

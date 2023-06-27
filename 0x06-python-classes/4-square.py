@@ -26,7 +26,12 @@ class Square:
         """This method is the getter method to retrieve the size"""
         return (self._size)
 
-    @property
+    @size.setter
     def size(self, value):
         """This method is the setter method to set the size to a value"""
-        self._size = value
+        if not isinstance(value, int):
+            raise TypeError("size must be an integer")
+        elif value < 0:
+            raise ValueError("size must be >= 0")
+        else:
+            self._size = value

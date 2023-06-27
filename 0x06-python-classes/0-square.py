@@ -7,5 +7,4 @@ class Square:
     Attributes:
         It bears no attributes
     """
-    def __init__(self):
-        pass
+    pass

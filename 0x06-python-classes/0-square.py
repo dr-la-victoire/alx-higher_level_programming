@@ -1,10 +1,5 @@
 #!/usr/bin/python3
+"""This class defines a square"""
 class Square:
-    """This is a simple class that defines a square
-
-    For now, it's only an empty class that simply defines a square
-
-    Attributes:
-        It bears no attributes
-    """
+    """For now it does nothing"""
     pass

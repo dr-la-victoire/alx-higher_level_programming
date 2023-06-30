@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""This module contains the function that prints an individual's name"""
+
+
 def say_my_name(first_name, last_name=""):
     """
     This functioin prints the name of a given person

@@ -1,0 +1,63 @@
+This text file contains the test cases for the 4-print_square module
+====================================================================
+
+Short Intro
+===========
+The 4-print_square module contains the function `print_square(size)`
+which prints a square to stdout, depending on the size given as parameter
+
+Importing the function
+======================
+Importing the function from the module
+::
+	>>> print_square = __import__('4-print_square').print_square
+
+Normal test cases
+================
+It takes the size of the square to be printed, and it must be an integer
+and the integer must be >= 0
+::
+	>>> print_square(3)
+	###
+	###
+	###
+
+::
+	>>> print_square(0)
+	
+
+::
+	>>> print_square(1)
+	#
+
+
+Abnormal test cases
+==================
+If the integer given is less than 0, it raises a ValueError
+::
+	>>> print_square(-5)
+	Traceback (most recent calll last):
+		...
+	ValueError: size must be >= 0
+
+If a float, rather than an int is provided, it gives a TypeError
+::
+	>>> print_square(8.5)
+	Traceback (most recent call last):
+		...
+	TypeError: size must be an integer
+
+If the float is less than 0, it also raises a TypeError and the error message
+is appropraitely set
+::
+	>>> print_square(-5.5)
+	Traceback (most recent call last):
+		...
+	TypeError: size must be an integer
+
+If a string is provided instead of an integer, it raises a TypeError
+::
+	>>> print_square('jacob')
+	Traceback (most recent call last):
+		...
+	TypeError: size must be an integer

@@ -1,0 +1,59 @@
+This text file contains test cases for the 5-text_indentation module
+====================================================================
+
+Short Intro
+==========
+The 5-text_indentation module contains the function `text_indentation(text)`
+which automatically indents a piece of text if it contains some special symbols
+
+Importing the function
+======================
+Importing the function from the module
+::
+	>>> text_indentation = __import__('5-text_indentation').text_indentation
+
+Normal cases
+===========
+The function takes a string as parameter and indents on encountering some special symbols
+
+On Fullstop
+::
+	>>> text_indentation("I love my mummy. And my mummy loves me. We live together")
+	I love my mummy.
+	<BLANKLINE>
+	And my mummy loves me.
+	<BLANKLINE>
+	We live together
+
+On question mark
+::
+	>>> text_indentation("Are you there? Ok. I am coming")
+	Are you there?
+	<BLANKLINE>
+	Ok.
+	<BLANKLINE>
+	I am coming
+
+On Collumn
+::
+	>>> text_indentation("she said: how are you? i am fine")
+	she said:
+	<BLANKLINE>
+	how are you?
+	<BLANKLINE>
+	i am fine
+
+Abnormal cases
+==============
+If text is not a string, it raises a TypeError
+::
+	>>> text_indentation([44, 55])
+	Traceback (most recent call last):
+		...
+	TypeError: text must be a string
+
+::
+	>>> text_indentation([4.55, 0.33])
+	Traceback (most recent call last):
+		...
+	TypeError: text must be a string

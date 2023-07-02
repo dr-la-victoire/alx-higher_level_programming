@@ -36,7 +36,7 @@ Abnormal test cases
 If the integer given is less than 0, it raises a ValueError
 ::
 	>>> print_square(-5)
-	Traceback (most recent calll last):
+	Traceback (most recent call last):
 		...
 	ValueError: size must be >= 0
 

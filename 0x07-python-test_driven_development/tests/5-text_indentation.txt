@@ -47,13 +47,13 @@ Abnormal cases
 ==============
 If text is not a string, it raises a TypeError
 ::
-	>>> text_indentation([44, 55])
+	>>> text_indentation(7)
 	Traceback (most recent call last):
 		...
 	TypeError: text must be a string
 
 ::
-	>>> text_indentation([4.55, 0.33])
+	>>> text_indentation([7.5)
 	Traceback (most recent call last):
 		...
 	TypeError: text must be a string

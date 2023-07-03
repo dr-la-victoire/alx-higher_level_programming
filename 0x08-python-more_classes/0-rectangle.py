@@ -3,4 +3,4 @@
 
 
 class Rectangle:
-    pass # it does nothing
+    pass  # it does nothing

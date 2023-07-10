@@ -8,3 +8,4 @@ The following projects are stored in this repository:
 6) 0x06. Python - Classes and Objects: All the work on Object Oriented Programming
 7) 0x07. Python - Test-driven development: We're learning the importance of TDD using unitest and doctest. I think it's the test first then code module
 8) 0x08. Python - More Classes and Objects: yeah that's right... more classes
+9) 0x0A. Python - Inheritance

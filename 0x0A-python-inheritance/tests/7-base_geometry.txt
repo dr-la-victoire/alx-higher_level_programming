@@ -1,0 +1,22 @@
+Test File For 7-base_geometry.py
+================================
+
+Import testing
+==============
+>>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+>>>
+
+Normal Test Cases
+=================
+
+Raises expection as area is not yet implemented
+>>> BaseGeometry.area()
+>>> area() is not yet implemented
+
+Raises TypeError if value is not int in the integer_validator method
+>>> BaseGeometry.integer_validator("width", width)
+>>> TypeError: width must be an integer
+
+Raises ValueError if value is <= 0
+>>> BaseGeometry.integer_validator("width", -3)
+>>> ValueError: width must be greater than 0

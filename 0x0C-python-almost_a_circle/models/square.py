@@ -41,7 +41,7 @@ class Square(Rectangle):
         if args is not None and len(args) != 0:
             for arg in args:
                 if flag == 0:
-                    if flag == None:
+                    if flag is None:
                         self.__init__(self.size, self.x, self.y)
                     else:
                         self.id = arg

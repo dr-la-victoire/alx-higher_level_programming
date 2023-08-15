@@ -1,3 +1,3 @@
 -- This script removes database from the server
-DELETE DATABASE [IF NOT EXIST] hbtn_0c_0;
+DROP DATABASE IF EXISTS hbtn_0c_0;
 

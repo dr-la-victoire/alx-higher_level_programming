@@ -12,3 +12,4 @@ The following projects are stored in this repository:
 10) 0x0B. Python - Input/Output
 11) 0x0C. Python - Almost a circle: This project tests all that we have studied in python so far, including the *args, and **kwargs
 12) 0x0D. SQL - Introduction
+13) 0x0E. SQL - More queries

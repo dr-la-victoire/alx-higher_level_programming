@@ -3,7 +3,7 @@
 -- descending order
 SELECT city, AVG(value) 'avg_temp'
 FROM temperatures
-WHERE month = 'July' AND month = 'August'
+WHERE month = 7 AND month = 8
 GROUP BY city
 ORDER BY avg_temp DESC
 LIMIT 3;

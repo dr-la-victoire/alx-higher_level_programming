@@ -14,8 +14,7 @@ if __name__ == "__main__":
         sys.argv[1], sys.argv[2], sys.argv[3]), pool_pre_ping=True)
     Session = sessionmaker(bind=engine)
     session = Session()
-    letter = session.query(State).filter(State.name.like("%a%")).order_by(
+    states = session.query(State).filter(State.name.like("%a%")).order_by(
             State.id).all()
-    for l in letter:
-        print("{}: {}".format(l.id, l.name))
-
+    for letter in states:
+        print("{}: {}".format(letter.id, letter.name))

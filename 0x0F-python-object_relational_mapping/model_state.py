@@ -10,6 +10,8 @@ from sqlalchemy.ext.declarative import declarative_base
 Base = declarative_base()
 
 # The class definition
+
+
 class State(Base):
     """This class inherits from the Base class"""
     # Linking to the table

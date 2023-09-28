@@ -1,3 +1,3 @@
 #!/bin/bash
 # Displaying the methods allowed by a server
-curl -sI "$1" | grep "allow" | sed 's/allow: //' | tail -n 1
+curl -sIX "$1" | grep -i "Allow" | sed 's/Allow: //i'

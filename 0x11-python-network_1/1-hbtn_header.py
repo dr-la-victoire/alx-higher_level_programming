@@ -7,6 +7,7 @@ url = sys.argv[1]
 request = urllib.request.Request(url)
 with urllib.request.urlopen(request) as response:
     html = response.headers
-for header, value in html.items():
+    header_dict = dict(html)
+for header, value in header_dict.items():
     if header == "X-Request-Id":
         print("{}".format(value))

@@ -3,7 +3,9 @@
 import urllib.request
 import sys
 
-with urllib.request.urlopen(sys.argv[1]) as response:
+url = sys.argv[1]
+request = urllib.request.Request(url)
+with urllib.request.urlopen(request) as response:
     html = response.headers
 for header, value in html.items():
     if header == "X-Request-Id":

@@ -4,11 +4,12 @@ import urllib.request
 import sys
 import urllib.parse
 
-url = sys.argv[1]
-values = {"email": sys.argv[2]}
-data = urllib.parse.urlencode(values)
-encoded_data = data.encode("ascii")
-info = urllib.request.Request(url, encoded_data)
-with urllib.request.urlopen(info) as response:
-    html = response.read()
-print("{}".format(html.decode("utf-8")))
+if __name__ == "__main__":
+    url = sys.argv[1]
+    values = {"email": sys.argv[2]}
+    data = urllib.parse.urlencode(values)
+    encoded_data = data.encode("ascii")
+    info = urllib.request.Request(url, encoded_data)
+    with urllib.request.urlopen(info) as response:
+        html = response.read()
+    print("{}".format(html.decode("utf-8")))

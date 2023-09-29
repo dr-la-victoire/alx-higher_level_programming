@@ -4,10 +4,8 @@ import urllib.request
 import sys
 
 url = sys.argv[1]
-request = urllib.request.Request(url)
-with urllib.request.urlopen(request) as response:
+with urllib.request.urlopen(url) as response:
     html = response.headers
     header_dict = dict(html)
-for header, value in header_dict.items():
-    if header == "X-Request-Id":
-        print("{}".format(value))
+header_variable = header_dict.get("X-Request-Id")
+print(header_variable)

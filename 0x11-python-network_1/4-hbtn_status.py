@@ -7,4 +7,4 @@ if __name__ == "__main__":
     str_info = info.text
     print(
             "Body response:\n\t- type: {}\n\t- content: {}".format(
-                str_info, str_info))
+                str_info.__class__, str_info))

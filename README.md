@@ -13,3 +13,4 @@ The following projects are stored in this repository:
 11) 0x0C. Python - Almost a circle: This project tests all that we have studied in python so far, including the *args, and **kwargs
 12) 0x0D. SQL - Introduction
 13) 0x0E. SQL - More queries
+14) 0x12. Javascript Warm up - We're getting started with Javascript

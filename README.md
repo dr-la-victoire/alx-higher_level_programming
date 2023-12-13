@@ -14,3 +14,4 @@ The following projects are stored in this repository:
 12) 0x0D. SQL - Introduction
 13) 0x0E. SQL - More queries
 14) 0x12. Javascript Warm up - We're getting started with Javascript
+15) 0x13. JavaScript - Objects, Scopes and Closures

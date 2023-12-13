@@ -4,7 +4,7 @@ const len = process.argv.length;
 
 // printing 1 if args are 0 or 1
 if (len <= 3) {
-  console.log(1);
+  console.log(0);
 } else {
   // assigning the first and second args as biggest and 2nd biggest
   let biggest = parseInt(process.argv[2]);

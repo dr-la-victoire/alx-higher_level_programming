@@ -9,10 +9,10 @@ if (len <= 3) {
   // assigning the first and second args as biggest and 2nd biggest
   let biggest = parseInt(process.argv[2]);
   let secondBiggest = parseInt(process.argv[3]);
-  
+
   // swaping if second biggest is actually bigger than the biggest
   if (secondBiggest > biggest) {
-    let a = secondBiggest;
+    const a = secondBiggest;
     secondBiggest = biggest;
     biggest = a;
   }
@@ -20,10 +20,11 @@ if (len <= 3) {
   // going through the rest of the array
   for (let i = 4; i < len; i++) {
     // turning i to a number
-    let num = parseInt(process.argv[i]);
+    const num = parseInt(process.argv[i]);
 
     // checking if the current is the biggest
     if (num > biggest) {
+      secondBiggest = biggest;
       biggest = num;
     } else if (num > secondBiggest) {
       secondBiggest = num;

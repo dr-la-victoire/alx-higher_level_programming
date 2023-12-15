@@ -10,9 +10,9 @@ if __name__ == "__main__":
 
     def get_state(state_name):
         """This function tries to get the state and prevent sql injections"""
-        cur.execute("SELECT cities.name FROM cities JOIN states ON
-                    cities.state_id=states.id
-                    WHERE states.name LIKE '{}'".format(state_name))
+        cur.execute("SELECT cities.name FROM cities JOIN states ON \
+                cities.state_id=states.id WHERE \
+                states.name LIKE '{}'".format(state_name))
 
     get_state(sys.argv[4])
     results = cur.fetchall()

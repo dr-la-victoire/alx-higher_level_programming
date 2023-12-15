@@ -19,7 +19,4 @@ if __name__ == "__main__":
     session.add(new_state)
     session.commit()
 
-    # printing the new state's id
-    the_state = session.query(State).order_by(State.id.desc()).first()
-    print("{}".format(the_state.id))
-    session.close()
+    print("{}".format(new_state.id))

@@ -21,4 +21,5 @@ if __name__ == "__main__":
 
     # printing the new state's id
     the_state = session.query(State).order_by(State.id.desc()).first()
-    print(the_state.id)
+    print("{}".format(the_state.id))
+    session.close()

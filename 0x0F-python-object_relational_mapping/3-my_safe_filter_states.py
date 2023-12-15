@@ -10,7 +10,7 @@ if __name__ == "__main__":
 
     def get_state(state_name):
         """This function tries to get the state and prevent sql injections"""
-        cur.execute("SELECT * FROM states WHERE name LIKE '{}'".format(
+        cur.execute("SELECT * FROM states WHERE name LIKE BINARY '{}'".format(
             state_name))
 
     get_state(sys.argv[4])

@@ -4,7 +4,7 @@ $('document').ready(function () {
   });
 
   $('#remove_item').click(function () {
-    $('ul.my_list').last();
+    $('ul.my_list').children().last().remove();
   });
 
   $('#clear_list').click(function () {
